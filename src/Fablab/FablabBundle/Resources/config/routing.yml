@@ -1,6 +1,0 @@
-fablab_fablab_materiel:
-    path:     /
-    defaults: { _controller: FablabFablabBundle:Default:index }
-fablab_fablab_presentation:
-    path:     /presentation
-    defaults:  {_controller: FablabFablabBundle:Default:presentation }

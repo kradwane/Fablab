@@ -1,4 +1,0 @@
-services:
-#    fablab_fablab.example:
-#        class: Fablab\FablabBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
