@@ -1,0 +1,7 @@
+ecommerce:
+    resource: "@EcommerceBundle/Resources/config/routing.yml"
+    prefix:   /ecommerce/   #rajout d un prefixe dans l url
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
