@@ -1,0 +1,11 @@
+ecommerce_homepage:
+    path:     /
+    defaults: { _controller: EcommerceBundle:Produit:produit}
+ecommerce_first:
+    path:     /first.{_format}
+    defaults: {_controller: "EcommerceBundle:Default:first",_format: html}
+    requirements:
+        _format: html
+ecommerce_second:
+    path:     /second
+    defaults: {_controller: EcommerceBundle:Default:second}
