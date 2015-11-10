@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9be037d8-4a95-421b-8a51-6b3c7c65a039" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/demo/monfablab (copie).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/monfablab.jpg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/accueil.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/demo/bg_fullsize.jpg" afterPath="$PROJECT_DIR$/assets/images/demo/bg_fullsize.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/demo/bg_wrapper.jpg" afterPath="$PROJECT_DIR$/assets/images/demo/bg_wrapper.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/demo/bg_wrapper@2x.jpg" afterPath="$PROJECT_DIR$/assets/images/demo/bg_wrapper@2x.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/demo/bg_wrapper_402x.jpg" afterPath="$PROJECT_DIR$/assets/images/demo/bg_wrapper_402x.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/demo/bg_wrapper_bw.jpg" afterPath="$PROJECT_DIR$/assets/images/demo/bg_wrapper_bw.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/demo/bg_wrapper_bw@2x.jpg" afterPath="$PROJECT_DIR$/assets/images/demo/bg_wrapper_bw@2x.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/demo/bg_wrapper_bw_402x.jpg" afterPath="$PROJECT_DIR$/assets/images/demo/bg_wrapper_bw_402x.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.html" afterPath="$PROJECT_DIR$/admin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apropos.html" afterPath="$PROJECT_DIR$/apropos.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/logo.svg" afterPath="$PROJECT_DIR$/assets/images/logo.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etudiant.html" afterPath="$PROJECT_DIR$/etudiant.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/info.html" afterPath="$PROJECT_DIR$/info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reservation.html" afterPath="$PROJECT_DIR$/reservation.html" />
-    </list>
+    <list default="true" id="9be037d8-4a95-421b-8a51-6b3c7c65a039" name="Default" comment="" />
     <ignored path="Fablab.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -498,7 +479,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1215" height="1028" extended-state="6" />
+    <frame x="65" y="-4" width="1215" height="1028" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
