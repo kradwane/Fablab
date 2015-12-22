@@ -132,8 +132,8 @@
                 <div class='row'>
                     <div class='col-sm-12'>
                         <h1 class='title'>
-                            Services
-                            <small>Vivamus bibendum hendrerit metus.</small>
+                            Réservation
+                            <small>Réservez la machine que vous souhaitez utiliser</small>
                         </h1>
                     </div>
                 </div>
@@ -141,272 +141,58 @@
         </div>
         <div id='main-content'>
             <div class='container'>
-                <div class='row'>
-                    <div class='col-sm-12'>
-                        <div class='page-header page-header-with-icon no-mg-t'>
-                            <i class='fa-icon-briefcase'></i>
-
-                            <h2>
-                                Top services
-                                <small>Mauris feugiat lacus quis aliquet dapibus. Sed venenatis turpis quis neque
-                                    egestas porttitor.
-                                </small>
-                            </h2>
-                        </div>
-                        <div class='row panels'>
-                            <div class='col-sm-4 panel-item'>
-                                <a class='panel panel-image' href='#'>
-                                    <div class='panel-icon'>
-                                        <i class='fa-icon-time'></i>
-                                    </div>
-                                    <div class='panel-heading'><img class="img-responsive-sm" alt="Project planning"
-                                                                    width="768" height="300"
-                                                                    src="assets/images/demo/panels/panel_bg_compass.jpg"/>
-                                    </div>
-                                    <div class='panel-body'>
-                                        <h3 class='panel-title'>Project planning</h3>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu pharetra
-                                            felis.est.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class='col-sm-4 panel-item'>
-                                <a class='panel panel-image' href='#'>
-                                    <div class='panel-icon'>
-                                        <i class='fa-icon-cog'></i>
-                                    </div>
-                                    <div class='panel-heading'><img class="img-responsive-sm" alt="Easy customizable"
-                                                                    width="768" height="300"
-                                                                    src="assets/images/demo/panels/panel_bg_hat.jpg"/>
-                                    </div>
-                                    <div class='panel-body'>
-                                        <h3 class='panel-title'>Easy customizable</h3>
-
-                                        <p>Etiam init rutrum ligula semper neque relu dapibus, non tempus mauris
-                                            sodales.est.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class='col-sm-4 panel-item'>
-                                <a class='panel panel-image' href='#'>
-                                    <div class='panel-icon'>
-                                        <i class='fa-icon-rocket'></i>
-                                    </div>
-                                    <div class='panel-heading'><img class="img-responsive-sm" alt="Fastest workers"
-                                                                    width="768" height="300"
-                                                                    src="assets/images/demo/panels/panel_bg_chess.jpg"/>
-                                    </div>
-                                    <div class='panel-body'>
-                                        <h3 class='panel-title'>Fastest workers</h3>
-
-                                        <p>Pellentesque id neque sit amet nibh placerat suscipit et a purus, mauris
-                                            id.</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+              <div class="row">
+                <div class="col-sm-12">
+                <form class="form form-horizontal" ><input name="authenticity_token" type="hidden" />
+                  <div class='form-group'>
+                          <label class='col-md-3 control-label' for='input-text'>Nom</label>
+                          <div class='col-md-5'>
+                            <input class='form-control' id='input-text'  placeholder="Insérer votre nom" type='text' required>
+                          </div>
+                      </div>
+                      <div class='form-group'>
+                          <label class='col-md-3 control-label' for='input-text'>Email</label>
+                          <div class='col-md-5'>
+                            <input class='form-control' id='input-text'  placeholder="Insérer votre email" type='text' required>
+                          </div>
+                      </div>
+                      <div class='form-group'>
+                          <label class='col-md-3 control-label' for='input-text'>Téléphone</label>
+                          <div class='col-md-5'>
+                            <input class='form-control' id='input-text'  placeholder="Insérer votre numéro de téléphone" type='text' required>
+                          </div>
+                      </div>
+                  <div class='form-group'>
+                  <label class='col-md-3 control-label' for='input-select-multi'>Choisissez la machine à réserver</label>
+                  <div class='col-md-5'>
+                    <select class='form-control' id='input-select-multi' >
+                      <option>Imprimante 3D</option>
+                      <option>Découpeuse Laser</option>
+                      <option>Pompe à vide</option>
+                      <option>Fréseuse numérique</option>
+                    </select>
+                  </div>
                 </div>
-                <div class='row'>
-                    <div class='col-sm-12'>
-                        <div class='page-header page-header-with-icon'>
-                            <i class='fa-icon-cloud'></i>
+                <div class="form-group">
+                    <label class='col-md-3 control-label' for='input-select-multi' type="date">Date de Réservation</label>
+                      <div class='col-md-5 input-group date' id='datetimepicker5'>
+                          <input type='text' class="form-control" />
+                          <span class="input-group-addon">
+                              <span class="glyphicon glyphicon-calendar"></span>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="col-md-5">
+                  </div>
+                    <button id="align" type="submit" class="btn btn-success ">Réserver</button>
 
-                            <h2>
-                                Other services
-                            </h2>
-                        </div>
-                        <div class='icon-boxes icon-boxes-lg'>
-                            <div class='row'>
-                                <div class='col-sm-6 icon-box'>
-                                    <div class='icon icon-wrap icon-circle icon-lg contrast-bg'>
-                                        <i class='fa-icon-truck text-white'></i>
-                                    </div>
-                                    <div class='content'>
-                                        <h3 class='title'>Shipping</h3>
-
-                                        <p>Curabitur id ante at diam consectetur mattis. Donec tristique est turpis, et
-                                            dapibus odio accumsan non. Donec rutrum sodales interdum.</p>
-                                    </div>
-                                </div>
-                                <div class='col-sm-6 icon-box'>
-                                    <div class='icon icon-wrap icon-circle icon-lg contrast-bg'>
-                                        <i class='fa-icon-wrench text-white'></i>
-                                    </div>
-                                    <div class='content'>
-                                        <h3 class='title'>Technical support</h3>
-
-                                        <p>Nulla consectetur turpis a ante tristique feugiat. In venenatis pellentesque
-                                            leo vehicula consequat. Maecenas elementum velit ut leo imperdiet
-                                            vehicula.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class='row'>
-                                <div class='col-sm-6 icon-box'>
-                                    <div class='icon icon-wrap icon-circle icon-lg contrast-bg'>
-                                        <i class='fa-icon-tag text-white'></i>
-                                    </div>
-                                    <div class='content'>
-                                        <h3 class='title'>Warranty</h3>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed massa
-                                            quis elit sagittis tempor. Ut rutrum sem vel augue rhoncus vestibulum.</p>
-                                    </div>
-                                </div>
-                                <div class='col-sm-6 icon-box'>
-                                    <div class='icon icon-wrap icon-circle icon-lg contrast-bg'>
-                                        <i class='fa-icon-shield text-white'></i>
-                                    </div>
-                                    <div class='content'>
-                                        <h3 class='title'>Security</h3>
-
-                                        <p>Cras aliquam accumsan lorem, ac cursus orci molestie eget. Ut nec ultricies
-                                            augue. Vestibulum lobortis enim felis, non semper arcu convallis at.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class='row'>
-                                <div class='col-sm-6 icon-box'>
-                                    <div class='icon icon-wrap icon-circle icon-lg contrast-bg'>
-                                        <i class='fa-icon-group text-white'></i>
-                                    </div>
-                                    <div class='content'>
-                                        <h3 class='title'>Customers</h3>
-
-                                        <p>Pellentesque sit amet est sit amet eros consectetur elementum sed et mauris.
-                                            Pellentesque interdum eu elit nec imperdiet.</p>
-                                    </div>
-                                </div>
-                                <div class='col-sm-6 icon-box'>
-                                    <div class='icon icon-wrap icon-circle icon-lg contrast-bg'>
-                                        <i class='fa-icon-trophy text-white'></i>
-                                    </div>
-                                    <div class='content'>
-                                        <h3 class='title'>Great results</h3>
-
-                                        <p>Nulla consectetur turpis a ante tristique feugiat. In venenatis pellentesque
-                                            leo vehicula consequat. Maecenas elementum velit ut leo imperdiet
-                                            vehicula.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class='row'>
-                    <div class='col-sm-12'>
-                        <div class='page-header page-header-with-icon'>
-                            <i class='fa-icon-star'></i>
-
-                            <h2>Top features</h2>
-                        </div>
-                        <div class='text-boxes'>
-                            <div class='row text-box'>
-                                <div class='col-sm-6'><img class="img-responsive center-block img-rounded"
-                                                           alt="Lorem ipsum dolor sit amet" width="340" height="188"
-                                                           src="assets/images/demo/common/devices.jpg"/></div>
-                                <div class='col-sm-6'>
-                                    <h3 class='title'><a href="#">Lorem ipsum dolor sit amet</a></h3>
-
-                                    <p>Mauris at ultricies eros. Morbi vel dui nec arcu suscipit euismod. Phasellus
-                                        pellentesque lectus eget quam ullamcorper consectetur. Vestibulum vitae risus a
-                                        erat mollis lac in venenatis tellus. Morbi et tristique lacus.</p>
-                                    <a class='btn btn-contrast btn-bordered btn-sm' href='#'>Read more</a>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class='row text-box'>
-                                <div class='col-sm-6 col-sm-push-6'><img class="img-responsive center-block img-rounded"
-                                                                         alt="Praesent vitae adipiscing nunc"
-                                                                         width="330" height="183"
-                                                                         src="assets/images/demo/common/chart.png"/>
-                                </div>
-                                <div class='col-sm-6 col-sm-pull-6'>
-                                    <h3 class='title'><a href="#">Praesent vitae adipiscing nunc</a></h3>
-
-                                    <p>Integer fringtilla fringilla mauris eget accumsan. Nullam quis consequat ipsum,
-                                        eu cursus mi. Donec quis quam at risus viverra venenatis. Phasellus non nulla
-                                        tortor. Fusce congue enim sed ullamcorper cursus. Donec tincidunt elit sed felis
-                                        iaculis laoreet.</p>
-                                    <a class='btn btn-contrast btn-bordered btn-sm' href='#'>Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class='row'>
-                    <div class='col-sm-12'>
-                        <div class='page-header page-header-with-icon'>
-                            <i class='fa-icon-refresh'></i>
-
-                            <h2>
-                                Our process
-                            </h2>
-                        </div>
-                        <div class='row'>
-                            <div class='col-sm-12'>
-                                <ul class='circle-stats'>
-                                    <li class='circle-stat-small'>
-                                        <div class='circle-stat-wrapper'>
-                                            <input class='hidden' data-fgColor='#8dc153' data-readOnly='true'
-                                                   data-stat='circle' data-thickness='0.1' type='text' value='25'>
-
-                                            <p class='percent'>1</p>
-                                        </div>
-                                        <h3 class='title'>Planning</h3>
-
-                                        <p class='description'>Duis vitae velit blandit, euismod lectus et, semper
-                                            justo. Nulla egestas.</p>
-                                    </li>
-                                    <li class='circle-stat-small'>
-                                        <div class='circle-stat-wrapper'>
-                                            <input class='hidden' data-fgColor='#8dc153' data-readOnly='true'
-                                                   data-stat='circle' data-thickness='0.1' type='text' value='50'>
-
-                                            <p class='percent'>2</p>
-                                        </div>
-                                        <h3 class='title'>Developing</h3>
-
-                                        <p class='description'>Phasellus et scelerisque justo, et ultrices sem imperdiet
-                                            eu. Maecenas lacinia leo.</p>
-                                    </li>
-                                    <li class='circle-stat-small'>
-                                        <div class='circle-stat-wrapper'>
-                                            <input class='hidden' data-fgColor='#8dc153' data-readOnly='true'
-                                                   data-stat='circle' data-thickness='0.1' type='text' value='75'>
-
-                                            <p class='percent'>3</p>
-                                        </div>
-                                        <h3 class='title'>Testing</h3>
-
-                                        <p class='description'>Nulla non interdum sem. Vestibulum is varius fermentum
-                                            auctor praesent.</p>
-                                    </li>
-                                    <li class='circle-stat-small'>
-                                        <div class='circle-stat-wrapper'>
-                                            <input class='hidden' data-fgColor='#8dc153' data-readOnly='true'
-                                                   data-stat='circle' data-thickness='0.1' type='text' value='100'>
-
-                                            <p class='percent'>4</p>
-                                        </div>
-                                        <h3 class='title'>Delivering</h3>
-
-                                        <p class='description'>Nunc et dictum dui, ac sodales sapien. Ut tincidunt
-                                            gravida nisi, sit amet interdum.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </br>
+              </div>
+            </form>
+  </div>
+</div>
             </div>
-        </div>
-        <div class='fade' id='scroll-to-top'>
-            <i class='fa-icon-chevron-up'></i>
-        </div>
-    </div>
+          </div>
     <footer id='footer'>
         <div id='footer-main'>
             <div class='container'>
