@@ -5,11 +5,6 @@
 <!-- <![endif] -->
 <head>
     <title>Fablab d'Université du Havre - Créer Compte</title>
-    <meta content='blog, business, clean, multipurpose template, twitter bootstrap 3, responsive' name='keywords'>
-    <meta content='Jednotka is multipurpose Twitter Bootstrap 3 template which is suitable for any type of business or online project. '
-          name='description'>
-    <meta content='BublinaStudio.com' name='author'>
-    <meta content='all' name='robots'>
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <!--[if IE]>
@@ -140,101 +135,119 @@
                 </div>
             </div>
         </div>
+
+        <!-- Form -->
+
         <div id='main-content'>
-
-            <div class="container">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
                 <div class="row">
-                    <div class="col-md-6">
-                        <form class="form-horizontal" action="" method="POST">
-                            <fieldset>
-                                <div id="legend">
-                                    <legend class="">Inscription</legend>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="nom">Nom</label>
-
-                                    <div class="controls">
-                                        <input type="text" id="nom" name="nom" placeholder=""
-                                               class="form-control input-lg">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="prenom">Prénom</label>
-
-                                    <div class="controls">
-                                        <input type="text" id="prenom" name="prenom" placeholder=""
-                                               class="form-control input-lg">
-
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="prenom">Nom d'utilisateur</label>
-
-                                    <div class="controls">
-                                        <input type="text" id="prenom" name="prenom" placeholder=""
-                                               class="form-control input-lg">
-                                    </div>
-                                </div>
-
-                                <div class="control-group">
-                                    <label class="control-label" for="email">E-mail</label>
-
-                                    <div class="controls">
-                                        <input type="email" id="email" name="email" placeholder=""
-                                               class="form-control input-lg">
-
-                                        <p class="help-block">S'il vous plaît fournir votre E-mail</p>
-                                    </div>
-                                </div>
-
-                                <div class="control-group">
-                                    <label class="control-label" for="password">Mot de passe</label>
-
-                                    <div class="controls">
-                                        <input type="password" id="password" name="password" placeholder=""
-                                               class="form-control input-lg">
-
-                                        <p class="help-block">Mot de passe doit être d'au moins 6 caractères</p>
-                                    </div>
-                                </div>
-
-                                <div class="control-group">
-                                    <label class="control-label" for="password_confirm">Mot de passe (Confirmer)</label>
-
-                                    <div class="controls">
-                                        <input type="password" id="password_confirm" name="password_confirm"
-                                               placeholder="" class="form-control input-lg">
-
-                                        <p class="help-block">Svp confirmer password</p>
-                                    </div>
-                                </div>
-
-                                <div class="control-group">
-                                    <label class="control-label" for="password">Numéro de Téléphone</label>
-
-                                    <div class="controls">
-                                        <input type="tel" name="mobile" class="form-control input-lg">
-
-                                        <p class="help-block">ex +33123456789</p>
-                                    </div>
-                                </div>
-
-                                <div class="control-group">
-                                    <!-- Button -->
-                                    <div class="controls">
-                                        <button class='btn btn-contrast' type='submit'>Inscription</button>
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
+                  <h2>Inscription <small>C'est gratuit.</small></h2>
+                  <hr class="colorgraph">
                 </div>
-            </div>
 
+                <form class="form-horizontal" action="" method="POST">
+                  <div class="row">
+                    <div class="col-xs-5">
+                      <div class="form-group">
+                        <label class="control-label">Pr&eacute;nom</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control input-lg" pattern="[A-Za-z ]+" title="Votre pr&eacute;nom" name="prenom" required>
+                            <div class="asterisk_input input-group-addon"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-5" style="margin-left:97.5px">
+                      <div class="form-group">
+                        <label class="control-label">Nom</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control input-lg" pattern="[A-Za-z ]+" title="Votre nom" name="nom" required>
+                          <div class="asterisk_input input-group-addon"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-            <div class='fade' id='scroll-to-top'>
-                <i class='fa-icon-chevron-up'></i>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label">Nom d'utilisateur</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control input-lg" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Votre e-mail" name="email" required>
+                            <div class="asterisk_input input-group-addon"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label">Mot de passe</label>
+                        <div class="input-group">
+                          <input type="password" class="form-control input-lg" pattern="(?=.*\d)(?=.*[a-z]).{6,}" title="Votre mot de passe doit contenir 6 caract&egrave;res minimum; diff&eacute;rencie chiffres et lettres" name="mdp" required>
+                          <div class="asterisk_input input-group-addon"></div>
+                        </div>
+                        <p class="help-block"></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label">Retapez le mot de passe</label>
+                        <div class="input-group">
+                          <input type="password" class="form-control input-lg" pattern="(?=.*\d)(?=.*[a-z]).{6,}" title="Le mot de passe doit &ecirc;tre identique &agrave; celui du premier champ" name="cmdp" required>
+                          <div class="asterisk_input input-group-addon"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label">Num&eacute;ro de T&eacute;l&eacute;phone</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control input-lg" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" title="Votre num&eacute;ro de t&eacute;l&eacute;phone. ex: +33123456789" name="telephone" required>
+                            <div class="asterisk_input input-group-addon"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <label class="panel panel-default">
+                      <div class="panel-heading">
+                        <i class="fa-icon-ok"></i>
+                          <span>J'accepte</span>
+                            <input type="checkbox" name="type" value="1" title="Veuillez cocher la case si vous souhaitez continuer" required>
+                      </div>
+                    </label>
+                    En cliquant sur la case <strong class="label label-primary">J'accepte</strong> vous acceptez les <a href="#">Termes et conditions</a> de cet accord.
+            			</div>
+
+                  <div class="row">
+                    <hr class="colorgraph">
+                  </div>
+
+                  <!-- Form buttons -->
+                  <div style="text-align: center;">
+                    <div class="form-group">
+                      <div class="col-sm-6">
+                        <input type="submit" class="btn btn-success btn-lg" value="Inscription">
+                      </div>
+                      <div class="col-sm-6">
+                        <input type="reset" class="btn btn-danger btn-lg" value="Annuler">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
+          </div>
         </div>
 
         <footer id='footer'>
