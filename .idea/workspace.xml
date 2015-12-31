@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9be037d8-4a95-421b-8a51-6b3c7c65a039" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\wamp\www\FablabMohammed\assets\images\test   \monphoto.jpg" afterPath="" />
-      <change type="MOVED" beforePath="C:\wamp\www\FablabMohammed\connexion.html" afterPath="$PROJECT_DIR$/connexion.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Creer-Compte.php" afterPath="$PROJECT_DIR$/Creer-Compte.php" />
+      <change type="MOVED" beforePath="C:\wamp\www\FablabMohammed\connexion.php" afterPath="$PROJECT_DIR$/connexion.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Decoupeuselaser.html" afterPath="$PROJECT_DIR$/Decoupeuselaser.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Fablab.iml" afterPath="$PROJECT_DIR$/.idea/Fablab.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fablab.sql" afterPath="$PROJECT_DIR$/Fablab.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Imprimante3d.html" afterPath="$PROJECT_DIR$/Imprimante3d.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modifier-Compte.php" afterPath="$PROJECT_DIR$/Modifier-Compte.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Supprimer-Compte.php" afterPath="$PROJECT_DIR$/Supprimer-Compte.php" />
@@ -16,7 +12,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/info.html" afterPath="$PROJECT_DIR$/info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reservation.html" afterPath="$PROJECT_DIR$/reservation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -40,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="connexion.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connexion.php">
+      <file leaf-file-name="connexion.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/connexion.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.692307">
-              <caret line="152" column="49" selection-start-line="152" selection-start-column="49" selection-end-line="152" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.71704745">
+              <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
               <folding>
                 <element signature="n#style#0;n#div#5;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -62,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fablab.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Fablab.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Fablab.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
               <folding />
             </state>
@@ -93,10 +88,10 @@
             <state vertical-scroll-proportion="-11.5">
               <caret line="28" column="46" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="46" />
               <folding>
-                <marker date="1451571803600" expanded="true" signature="142:264" placeholder="..." />
-                <marker date="1451571803600" expanded="true" signature="182:255" placeholder="..." />
-                <marker date="1451571803600" expanded="true" signature="1280:1409" placeholder="..." />
-                <marker date="1451571803600" expanded="true" signature="1320:1400" placeholder="..." />
+                <marker date="1451578728993" expanded="true" signature="143:265" placeholder="..." />
+                <marker date="1451578728993" expanded="true" signature="183:256" placeholder="..." />
+                <marker date="1451578728993" expanded="true" signature="1281:1410" placeholder="..." />
+                <marker date="1451578728993" expanded="true" signature="1321:1401" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -108,11 +103,11 @@
             <state vertical-scroll-proportion="-13.269231">
               <caret line="30" column="46" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="46" />
               <folding>
-                <marker date="1451571803687" expanded="true" signature="143:265" placeholder="..." />
-                <marker date="1451571803687" expanded="true" signature="183:256" placeholder="..." />
-                <marker date="1451571803687" expanded="true" signature="790:837" placeholder="DELETE FROM ..." />
-                <marker date="1451571803687" expanded="true" signature="1013:1140" placeholder="..." />
-                <marker date="1451571803687" expanded="true" signature="1053:1131" placeholder="..." />
+                <marker date="1451578729047" expanded="true" signature="144:266" placeholder="..." />
+                <marker date="1451578729047" expanded="true" signature="184:257" placeholder="..." />
+                <marker date="1451578729047" expanded="true" signature="791:838" placeholder="DELETE FROM ..." />
+                <marker date="1451578729047" expanded="true" signature="1014:1141" placeholder="..." />
+                <marker date="1451578729047" expanded="true" signature="1054:1132" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -141,11 +136,11 @@
         <option value="$PROJECT_DIR$/info.html" />
         <option value="$PROJECT_DIR$/reservation.html" />
         <option value="$PROJECT_DIR$/Fablab.sql" />
-        <option value="$PROJECT_DIR$/connexion.html" />
         <option value="$PROJECT_DIR$/compte.html" />
         <option value="$PROJECT_DIR$/compte.php" />
         <option value="$PROJECT_DIR$/Creer-Compte.php" />
         <option value="$PROJECT_DIR$/connexion.php" />
+        <option value="$PROJECT_DIR$/connexion.html" />
       </list>
     </option>
   </component>
@@ -320,7 +315,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/connexion.php">
+    <entry file="file://$PROJECT_DIR$/connexion.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="152" column="50" selection-start-line="152" selection-start-column="50" selection-end-line="152" selection-end-column="50" />
@@ -372,7 +367,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connexion.php">
+    <entry file="file://$PROJECT_DIR$/connexion.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="88" column="19" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
@@ -484,23 +479,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compte.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-145.07692">
-          <caret line="164" column="123" selection-start-line="164" selection-start-column="120" selection-end-line="164" selection-end-column="123" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Modifier-Compte.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.5">
           <caret line="28" column="46" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="46" />
           <folding>
-            <marker date="1451571803600" expanded="true" signature="142:264" placeholder="..." />
-            <marker date="1451571803600" expanded="true" signature="182:255" placeholder="..." />
-            <marker date="1451571803600" expanded="true" signature="1280:1409" placeholder="..." />
-            <marker date="1451571803600" expanded="true" signature="1320:1400" placeholder="..." />
+            <marker date="1451578728993" expanded="true" signature="143:265" placeholder="..." />
+            <marker date="1451578728993" expanded="true" signature="183:256" placeholder="..." />
+            <marker date="1451578728993" expanded="true" signature="1281:1410" placeholder="..." />
+            <marker date="1451578728993" expanded="true" signature="1321:1401" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -510,11 +497,11 @@
         <state vertical-scroll-proportion="-13.269231">
           <caret line="30" column="46" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="46" />
           <folding>
-            <marker date="1451571803687" expanded="true" signature="143:265" placeholder="..." />
-            <marker date="1451571803687" expanded="true" signature="183:256" placeholder="..." />
-            <marker date="1451571803687" expanded="true" signature="790:837" placeholder="DELETE FROM ..." />
-            <marker date="1451571803687" expanded="true" signature="1013:1140" placeholder="..." />
-            <marker date="1451571803687" expanded="true" signature="1053:1131" placeholder="..." />
+            <marker date="1451578729047" expanded="true" signature="144:266" placeholder="..." />
+            <marker date="1451578729047" expanded="true" signature="184:257" placeholder="..." />
+            <marker date="1451578729047" expanded="true" signature="791:838" placeholder="DELETE FROM ..." />
+            <marker date="1451578729047" expanded="true" signature="1014:1141" placeholder="..." />
+            <marker date="1451578729047" expanded="true" signature="1054:1132" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -532,21 +519,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.692307">
-          <caret line="152" column="49" selection-start-line="152" selection-start-column="49" selection-end-line="152" selection-end-column="49" />
-          <folding>
-            <element signature="n#style#0;n#div#5;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Fablab.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compte.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-145.07692">
+          <caret line="164" column="123" selection-start-line="164" selection-start-column="120" selection-end-line="164" selection-end-column="123" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connexion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71704745">
+          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#div#5;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
