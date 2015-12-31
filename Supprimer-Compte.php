@@ -2,7 +2,7 @@
 
 session_start();
 if(!isset($_SESSION['session'])) {
-  echo '<meta HTTP-EQUIV="REFRESH" content="3; url=connexion.html">';
+  echo '<meta HTTP-EQUIV="REFRESH" content="3; url=connexion.php">';
   echo "<center><font face='Verdana' size='3' color=red>
   Vous n'êtes pas connecté. Vous serez rédiger dans 3 seconds ...</font></center>";
   die();

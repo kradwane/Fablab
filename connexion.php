@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html class="lt-ie9" lang="en"> <![endif]-->
 <!--[if !IE] -->
@@ -184,26 +187,6 @@
                       </label>
                   </div>
 
-                  <div id="myModal" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
-
-                      <!-- Modal content-->
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          <h4 class="modal-title">Mot de passe oubli&eacute;</h4>
-                        </div>
-                        <div class="modal-body">
-                          <label>Votre adresse mail</label>
-                          <input class="form-control input-lg" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Votre adresse mail" name="email">
-                        </div>
-                        <div class="modal-footer">
-                          <button type="submit" class="btn btn-contrast btn-lg" data-dismiss="modal">Envoyer</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
                   <div class="row">
                     <hr class="colorgraph">
                   </div>
@@ -225,6 +208,28 @@
             </div>
           </div>
         </div>
+
+        <form class="form-signin" action="connexion.php" method="GET">
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Mot de passe oubli&eacute;</h4>
+                        </div>
+                        <div class="modal-body">
+                            <label>Votre adresse mail</label>
+                            <input class="form-control input-lg" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Votre adresse mail" name="email">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-contrast btn-lg" data-dismiss="modal">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
 
         <footer id='footer'>
             <div id='footer-main'>

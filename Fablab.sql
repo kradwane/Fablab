@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `Utilisateur` (
 
 
 CREATE TABLE IF NOT EXISTS `Reservation` (
-  `ReservationId` iint NOT NULL AUTO_INCREMENT,
+  `ReservationId` int NOT NULL AUTO_INCREMENT,
   `ReservationDate` DATE NOT NULL,
   `ReservationTemps` varchar(50) NOT NULL,
   `ReservationUtilisateurId` int(5) NOT NULL,
@@ -37,9 +37,9 @@ CREATE TABLE IF NOT EXISTS `Machine` (
 ) ENGINE=Innodb DEFAULT CHARSET=utf8;
 
 
-INSERT DELAYED IGNORE INTO `user` (`UtilisateurId`,`UtilisateurPrenom`,`UtilisateurNom`,`UtilisateurEmail`,`UtilisateurMDP`,`UtilisateurTelephone`,`UtilisateurStatus`) VALUES
+INSERT INTO `Utilisateur` (`UtilisateurId`,`UtilisateurPrenom`,`UtilisateurNom`,`UtilisateurEmail`,`UtilisateurMDP`,`UtilisateurTelephone`,`UtilisateurStatus`) VALUES
 (00001,'Admin','Admin','admin@admin.com','123456','0660053575',0);
-INSERT DELAYED IGNORE INTO `user` (`UtilisateurId`,`UtilisateurPrenom`,`UtilisateurNom`,`UtilisateurEmail`,`UtilisateurMDP`,`UtilisateurTelephone`,`UtilisateurStatus`) VALUES
+INSERT INTO `Utilisateur` (`UtilisateurId`,`UtilisateurPrenom`,`UtilisateurNom`,`UtilisateurEmail`,`UtilisateurMDP`,`UtilisateurTelephone`,`UtilisateurStatus`) VALUES
 (00002,'Prof','Prof','prof@prof.com','123456','+33660053575',1);
-INSERT DELAYED IGNORE INTO `user` (`UtilisateurId`,`UtilisateurPrenom`,`UtilisateurNom`,`UtilisateurEmail`,`UtilisateurMDP`,`UtilisateurTelephone`,`UtilisateurStatus`) VALUES
+INSERT INTO `Utilisateur` (`UtilisateurId`,`UtilisateurPrenom`,`UtilisateurNom`,`UtilisateurEmail`,`UtilisateurMDP`,`UtilisateurTelephone`,`UtilisateurStatus`) VALUES
 (00003,'Etudiant','Etudiant','etudiant@etudiant.com','123456','0033660053575',2);
