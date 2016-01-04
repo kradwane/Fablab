@@ -141,93 +141,52 @@
                 </div>
             </div>
         </div>
-
-        <!-- Form -->
         <div id='main-content'>
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-                <form class="form-signin" action="" method="POST">
+            <form class="form-signin">
+                <h2 class="form-signin-heading">Svp Connectez-vous</h2>
+                <label for="inputEmail" class="sr-only">Adresse email</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
+                       autofocus="">
+                <label for="inputPassword" class="sr-only">Mot de pass</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
 
-                  <div class="row">
-                    <h2>Connectez-vous <small>C'est simple.</small></h2>
-                    <hr class="colorgraph">
-                  </div>
+                <div class="checkbox">
+                    <label>
+                        <a data-toggle="modal" data-target="#myModal"> Mot de passe oubli&eacute; ?</a>
+                    </label>
+                </div>
 
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <div class="form-group">
-                        <label class="control-label">Nom d'utilisateur</label>
-                        <div class="input-group">
-                          <span class="input-group-addon"><i class="fa-icon-user"></i></span>
-                          <input type="text" class="form-control input-lg" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Votre e-mail" name="email" required>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <div class="form-group">
-                        <label class="control-label">Mot de passe</label>
-                        <div class="input-group">
-                          <span class="input-group-addon"><i class="fa-icon-lock"></i></span>
-                          <input type="password" class="form-control input-lg" pattern="(?=.*\d)(?=.*[a-z]).{6,}" title="Votre mot de passe" name="mdp" required>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="checkbox">
-                      <label>
-                          <a data-toggle="modal" data-target="#myModal">Mot de passe oubli&eacute;?</a>
-                      </label>
-                  </div>
-
-                  <div class="row">
-                    <hr class="colorgraph">
-                  </div>
-
-                  <!-- Form buttons -->
-                  <div style="text-align: center;">
-                    <div class="form-group">
-                      <div class="col-sm-6">
-                        <input type="submit" class="btn btn-success btn-lg" value="Connexion">
-                      </div>
-                    </div>
-                    <p> Vous n'&ecirc;tes pas inscrit au FAB LAB ? <br>
-                      <a href="compte.html"> Cr&eacute;er un compte ?</a>
-                    </p>
-                  </div>
-
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <form class="form-signin" action="connexion.html" method="GET">
-            <div id="myModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
+                <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
 
                     <!-- Modal content-->
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Mot de passe oubli&eacute;</h4>
-                        </div>
-                        <div class="modal-body">
-                            <label>Votre adresse mail</label>
-                            <input class="form-control input-lg" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Votre adresse mail" name="email">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-contrast btn-lg" data-dismiss="modal">Envoyer</button>
-                        </div>
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Mot de passe oubli&eacute;</h4>
+                      </div>
+                      <div class="modal-body">
+                        <label>Votre adresse mail</label>
+                        <input class="form-control" type="text" pattern="[0-9]+([\.,][0-9]+)?" placeholder="Votre adresse mail" name="email" required>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-contrast fadeInRight btn-block" data-dismiss="modal">Envoyer</button>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </form>
 
+                <button class="btn btn-contrast btn-xlarge fadeInRight btn-block" type="submit">Connexion</button>
+
+                <center><p> Vous n'êtes pas inscrit au FAB LAB ?<br>
+                    <a href="compte.html"> Créer un compte ?</a></p></center>
+            </form>
+
+
+            <div class='fade' id='scroll-to-top'>
+                <i class='fa-icon-chevron-up'></i>
+            </div>
+        </div>
         <footer id='footer'>
             <div id='footer-main'>
                 <div class='container'>
