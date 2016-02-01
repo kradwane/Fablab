@@ -1,0 +1,43 @@
+{# src/AsnaBundle/Resources/view/machine/view.html.twig #}
+
+{% extends "::admin.html.twig" %}
+
+{% block title %}
+  Lecture d'une machine - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+  <div class="well">
+
+    Nom de la machine  :{{ machine.nomM }}<br>
+    Info génerale  :{{ machine.infogenerale }}<br>
+    Surface  :{{ machine.surface }}<br>
+    Resolution  :{{ machine.resolution }}<br>
+    Presicion  :{{ machine.presicionm }}<br>
+    Logiciel utilisé  :{{ machine.logicielu }}<br>
+    Format Fichier  :{{ machine.formatfich }}<br>
+    Matériaux Utilisé  :{{ machine.materiauxu }}<br>
+    Puissance  :{{ machine.puissance }}<br>
+  </div>
+
+  {# On vérifie qu'une image soit bien associée à l'annonce
+  {% if machine.image is not null %}
+    <img src="{{ machine.image.url }}" alt="{{ machine.image.alt }}">
+  {% endif %}
+#}
+  <p>
+    <a href="{{ path('platform_listview') }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à la liste
+    </a>
+    <a href="{{ path('oc_platform_edit', {'id': machine.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-edit"></i>
+      Modifier Machine
+    </a>
+    <a href="{{ path('oc_platform_delete', {'id': machine.id}) }}" class="btn btn-danger">
+      <i class="glyphicon glyphicon-trash"></i>
+      Supprimer Machine
+    </a>
+  </p>
+
+{% endblock %}
