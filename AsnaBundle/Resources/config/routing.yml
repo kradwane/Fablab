@@ -1,0 +1,38 @@
+# src/OC/PlatformBundle/Resources/config/routing.yml
+
+oc_platform_home:
+    path:      /{page}
+    defaults:  { _controller: AsnaBundle:Advert:index, page: 1 }
+    requirements:
+        page: \d*
+
+asna:
+  path: /connexion
+  defaults:  { _controller: AsnaBundle:Advert:connexion }
+
+connect:
+  path: /connect
+  defaults:  { _controller: AsnaBundle:Advert:connect }
+
+
+oc_platform_view:
+    path:      /advert/{id}
+    defaults:  { _controller: AsnaBundle:Advert:view }
+    requirements:
+        id: \d+
+
+oc_platform_add:
+    path:      /add
+    defaults:  { _controller: AsnaBundle:Advert:add }
+
+oc_platform_edit:
+    path:      /edit/{id}
+    defaults:  { _controller: AsnaBundle:Advert:edit }
+    requirements:
+        id: \d+
+
+oc_platform_delete:
+    path:      /delete/{id}
+    defaults:  { _controller: AsnaBundle:Advert:delete }
+    requirements:
+        id: \d+
