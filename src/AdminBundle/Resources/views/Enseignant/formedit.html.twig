@@ -1,0 +1,107 @@
+{# src/AsnaBundle/Resources/views/Addmin/form.html.twig #}
+
+<div class="well">
+  {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+
+    {# Les erreurs générales du formulaire. #}
+    {{ form_errors(form) }}
+
+    <div class="form-group">
+      {# Génération du label. #}
+      {{ form_label(form.nomM, "Nom de la machine", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+      {# Affichage des erreurs pour ce champ précis. #}
+      {{ form_errors(form.nomM) }}
+
+      <div class="col-sm-4">
+        {# Génération de l'input. #}
+        {{ form_widget(form.nomM, {'attr': {'class': 'form-control'}}) }}
+      </div>
+    </div>
+
+    {# Idem pour un autre champ. #}
+    <div class="form-group">
+      {{ form_label(form.infogenerale, "Information Génerale", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+      {{ form_errors(form.infogenerale) }}
+      <div class="col-sm-4">
+        {{ form_widget(form.infogenerale, {'attr': {'class': 'form-control'}}) }}
+      </div>
+    </div>
+
+  {# Génération du label + error + widget pour un champ #}
+  <div class="form-group">
+    {{ form_label(form.surface, "Surface", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+    {{ form_errors(form.surface) }}
+    <div class="col-sm-4">
+      {{ form_widget(form.surface, {'attr': {'class': 'form-control'}}) }}
+    </div>
+  </div>
+
+  <div class="form-group">
+    {{ form_label(form.resolution, "Résolution", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+    {{ form_errors(form.resolution) }}
+    <div class="col-sm-4">
+      {{ form_widget(form.resolution, {'attr': {'class': 'form-control'}}) }}
+    </div>
+  </div>
+
+  <div class="form-group">
+    {{ form_label(form.presicionm, "Précision", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+    {{ form_errors(form.presicionm) }}
+    <div class="col-sm-4">
+      {{ form_widget(form.presicionm, {'attr': {'class': 'form-control'}}) }}
+    </div>
+  </div>
+
+  <div class="form-group">
+    {{ form_label(form.logicielu, "Logiciel utilisé", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+    {{ form_errors(form.logicielu) }}
+    <div class="col-sm-4">
+      {{ form_widget(form.logicielu, {'attr': {'class': 'form-control'}}) }}
+    </div>
+  </div>
+
+  <div class="form-group">
+    {{ form_label(form.formatfich, "Format Fichier", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+    {{ form_errors(form.formatfich) }}
+    <div class="col-sm-4">
+      {{ form_widget(form.formatfich, {'attr': {'class': 'form-control'}}) }}
+    </div>
+  </div>
+
+  <div class="form-group">
+    {{ form_label(form.materiauxu, "Matériaux utilisé", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+    {{ form_errors(form.materiauxu) }}
+    <div class="col-sm-4">
+      {{ form_widget(form.materiauxu, {'attr': {'class': 'form-control'}}) }}
+    </div>
+  </div>
+
+  <div class="form-group">
+    {{ form_label(form.puissance, "Puissance", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+    {{ form_errors(form.puissance) }}
+    <div class="col-sm-4">
+      {{ form_widget(form.puissance, {'attr': {'class': 'form-control'}}) }}
+    </div>
+  </div>
+
+  {# Génération automatique des champs pas encore écrits.
+     Dans cet exemple, ce serait le champ CSRF (géré automatiquement par Symfony !)
+     et tous les champs cachés (type « hidden »). #}
+     {# Pour le bouton, pas de label ni d'erreur, on affiche juste le widget #}
+     <div class="form-group">
+     <div class="col-sm-7">
+      <center>{{ form_widget(form.Modifier, {'attr': {'class': 'btn btn-primary'}}) }}</center>
+     </div>
+     </div>
+
+
+  {{ form_rest(form) }}
+
+  {# Fermeture de la balise <form> du formulaire HTML #}
+  {{ form_end(form) }}
+  <a href="{{ path('platform_listview')}}" class="btn btn-default">
+    <i class="glyphicon glyphicon"></i>
+    Liste Machines
+  </a>
+</div>

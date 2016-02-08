@@ -1,0 +1,12 @@
+{# src/AdminBundle/Resources/views/admin/add.html.twig #}
+{% extends "::admin.html.twig" %}
+{% block body %}
+  <h2>Ajouter un Enseignant</h2>
+  {{ include("AdminBundle:Enseignant:form.html.twig") }}
+
+  <p>
+    Attention : Enseignant sera ajoutée directement
+    sur la page d'accueil après validation du formulaire.
+  </p>
+
+{% endblock %}

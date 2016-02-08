@@ -1,0 +1,16 @@
+{# src/AdminBundle/Resources/views/admin/add.html.twig #}
+
+{% extends "::admin.html.twig" %}
+
+{% block body %}
+
+  <h2>Modification de l'Enseignant</h2>
+
+{{ include("AdminBundle:Enseignant:form.html.twig") }}
+
+  <p>
+    Attention : Enseignant sera modifié directement
+    sur la page d'accueil après validation de la modification.
+  </p>
+
+{% endblock %}

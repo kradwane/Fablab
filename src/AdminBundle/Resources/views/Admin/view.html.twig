@@ -1,0 +1,143 @@
+{# src/AsnaBundle/Resources/view/machine/view.html.twig #}
+
+{% extends "::admin.html.twig" %}
+
+{% block title %}
+  Lecture d'une machine - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+  <div class="well">
+<div id='main' role='main'>
+  <div id='main-content-header'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm-12'>
+          <h1 class='title'>
+            {{ machine.nomM }}
+          </h1>
+          <ol class='breadcrumb'>
+            <li>
+              <a href='index.html'>
+                <i class='fa-icon-home'></i>
+              </a>
+            </li>
+            <li class='active'>Machines</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id='main-content'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-push-9 col-sm-push-8 col-sm-4 col-md-3'>
+          <nav class='sidebar'>
+            <button class='btn btn-block btn-contrast sidebar-toggle' data-target='.sidebar-collapse' data-toggle='collapse' type='button'>
+              <span class='sr-only'>Toggle navigation</span>
+              <span class='icon-bar'></span>
+              <span class='icon-bar'></span>
+              <span class='icon-bar'></span>
+            </button>
+            <div class='sidebar-collapse collapse'>
+              <div class='box'>
+                <h2 class='title'>TECHNIQUES</h2>
+              </div>
+              <div class='box'>
+                <div class='list-group'>
+
+                                <span class="list-group-item">
+                              <strong>Surface maximale:</strong><br>{{ machine.surface }}</span>
+                              <span class="list-group-item" >
+                            <strong>Résolution méchanique:</strong><br>{{ machine.resolution }}</span>
+                            <span class="list-group-item" >
+                          <strong>Précision de position:</strong><br>{{ machine.presicionm }}</span>
+                          <span class="list-group-item" >
+                        <strong>Logiciel utilisé:</strong><br>{{ machine.logicielu }}</span>
+                        <span class="list-group-item" >
+                      <strong>Formats de fichier acceptés:</strong><br>{{ machine.formatfich }}</span>
+                      <span class="list-group-item">
+                    <strong>Matériaux utilisés:</strong><br>{{ machine.materiauxu }} </span>
+                    <span class="list-group-item">
+                  <strong>Puissance:</strong><br>{{ machine.puissance }} </span>
+            </div>
+              </div>
+              <div class='box'>
+                <h3 class='title'>Projets avec cette machines</h3>
+                <ul class='list-unstyled list-inline image-list-box'>
+                  <li>
+                    <a href='#'>
+                      <img width="50" height="50" src="assets/images/demo/stream/xx.jpg" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <img  width="50" height="50" src="assets/images/demo/stream/xx.jpg" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <img  width="50" height="50" src="assets/images/demo/stream/xx.jpg" />
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class='col-md-pull-3 col-sm-pull-4 col-sm-8 col-md-9'>
+          <div class='text-boxes'>
+            <div class='row text-box text-box-title-above text-box-big-image'>
+              <div class='col-sm-12'>
+                <h2 class='title'>CARACTERISTIQUE</h2>
+                <div class='row'>
+                  <div class='col-sm-12'>
+                    <a href='blog_single_post.html'>
+                      {% if machine.image is not null %}
+                      <img src="{{ machine.image.url }}" alt="{{ machine.image.alt }}">
+                    {% endif %}
+                    </a>
+                  </div>
+                  <div class='col-sm-12'>
+                    <p><strong>{{ machine.nomM }} </strong><br>
+      Informations générales :<br>
+          {{ machine.infogenerale }}</p>
+                    <a class='btn btn-contrast btn-bordered btn-xs' href='blog_single_post.html'>Réservez</a>
+                  </div>
+                </div>
+                <hr class='hr-half'>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='fade' id='scroll-to-top'>
+    <i class='fa-icon-chevron-up'></i>
+  </div>
+</div>
+
+  {# On vérifie qu'une image soit bien associée à l'annonce
+  {% if machine.image is not null %}
+    <img src="{{ machine.image.url }}" alt="{{ machine.image.alt }}">
+  {% endif %}
+#}
+  <p>
+    <a href="{{ path('platform_listview') }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à la liste
+    </a>
+    <a href="{{ path('platform_edit', {'id': machine.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-edit"></i>
+      Modifier Machine
+    </a>
+    <a href="{{ path('platform_delete', {'id': machine.id}) }}" class="btn btn-danger">
+      <i class="glyphicon glyphicon-trash"></i>
+      Supprimer Machine
+    </a>
+  </p>
+  </div>
+{% endblock %}

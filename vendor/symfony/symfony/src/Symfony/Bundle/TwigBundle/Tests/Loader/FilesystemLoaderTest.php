@@ -24,16 +24,16 @@ class FilesystemLoaderTest extends TestCase
         $locator
             ->expects($this->once())
             ->method('locate')
-            ->will($this->returnValue(__DIR__.'/../DependencyInjection/Fixtures/Resources/views/layout.html.twig.twig'))
+            ->will($this->returnValue(__DIR__.'/../DependencyInjection/Fixtures/Resources/views/layout.html.twig'))
         ;
         $loader = new FilesystemLoader($locator, $parser);
         $loader->addPath(__DIR__.'/../DependencyInjection/Fixtures/Resources/views', 'namespace');
 
         // Twig-style
-        $this->assertEquals("This is a layout\n", $loader->getSource('@namespace/layout.html.twig.twig'));
+        $this->assertEquals("This is a layout\n", $loader->getSource('@namespace/layout.html.twig'));
 
         // Symfony-style
-        $this->assertEquals("This is a layout\n", $loader->getSource('TwigBundle::layout.html.twig.twig'));
+        $this->assertEquals("This is a layout\n", $loader->getSource('TwigBundle::layout.html.twig'));
     }
 
     public function testExists()
@@ -44,7 +44,7 @@ class FilesystemLoaderTest extends TestCase
         $locator
             ->expects($this->once())
             ->method('locate')
-            ->will($this->returnValue($template = __DIR__.'/../DependencyInjection/Fixtures/Resources/views/layout.html.twig.twig'))
+            ->will($this->returnValue($template = __DIR__.'/../DependencyInjection/Fixtures/Resources/views/layout.html.twig'))
         ;
         $loader = new FilesystemLoader($locator, $parser);
 
