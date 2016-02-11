@@ -1,0 +1,20 @@
+<li class='dropdown'>
+    <a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown' href='#'>
+    <span>
+      {{ app.user.username }}
+      <i class='fa-icon-angle-down'></i>
+    </span>
+    </a>
+    <ul class='dropdown-menu' role='menu'>
+        <li class=''>
+            <a href={{ path('fos_user_profile_show') }}>Mes Informations</a>
+        </li>
+        <li class=''>
+            <a href={{ path('fos_user_profile_edit') }}>Editer mes Informations</a>
+        </li><li class=''>
+            <a href={{ path('fos_user_change_password') }}>Changer mon Mot de Passe</a>
+        </li><li class=''>
+            <a href={{ path('fos_user_security_logout') }}>Déconnexion</a>
+        </li>
+    </ul>
+</li>

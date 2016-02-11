@@ -1,0 +1,27 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="modal-content">
+    <form action="{{ path('fos_user_resetting_send_email') }}" method="post" class="fos_user_resetting_request">
+        <div style=" width: 50%;
+                     margin: 0 auto;">
+        <div class="modal-header">
+            <h4 class="modal-title">Mot de passe oublié</h4>
+        </div>
+        <div class="input-group">
+            {% if invalid_username is defined %}
+                <p></p>
+                <div class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span>
+                    {{ 'resetting.request.invalid_username'|trans({'%username%': invalid_username}) }}
+                </div>
+            {% endif %}
+            <label for="username">{{ 'resetting.request.username'|trans }}</label>
+            <input class="form-control input-lg" type="text" id="username" name="username" title="Votre adresse mail" required="required" />
+        </div>
+        <div class="modal-footer">
+            <input type="submit"  class="btn btn-contrast btn-lg" data-dismiss="modal" value=" {{ 'resetting.request.submit'|trans }}" />
+        </div>
+        </div>
+    </form>
+</div>

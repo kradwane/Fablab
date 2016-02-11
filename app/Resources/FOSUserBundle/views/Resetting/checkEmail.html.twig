@@ -1,0 +1,36 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+    <div id="main" role="main">
+        <div id="main-content-header">
+            <div class="container">
+                <div class="row">
+                    <div class='col-sm-12'>
+                        <h1 class='title'>
+                            Envoi de l'email
+                            {#<small>Connectez-vous c'est plus vite</small>#}
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-content">
+
+            <div class="container">
+                <div class="row">
+                    <p>
+                    <h4>
+                        {{ 'resetting.check_email'|trans({'%email%': email}) }}
+                    </h4>
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

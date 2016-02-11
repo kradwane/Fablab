@@ -1,0 +1,30 @@
+adminMachines:
+    path:     /
+    defaults: { _controller: "FablabFablabBundle:MachinesAdmin:index" }
+
+adminMachines_show:
+    path:     /{id}/show
+    defaults: { _controller: "FablabFablabBundle:MachinesAdmin:show" }
+
+adminMachines_new:
+    path:     /new
+    defaults: { _controller: "FablabFablabBundle:MachinesAdmin:new" }
+
+adminMachines_create:
+    path:     /create
+    defaults: { _controller: "FablabFablabBundle:MachinesAdmin:create" }
+    methods:  POST
+
+adminMachines_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "FablabFablabBundle:MachinesAdmin:edit" }
+
+adminMachines_update:
+    path:     /{id}/update
+    defaults: { _controller: "FablabFablabBundle:MachinesAdmin:update" }
+    methods:  [POST, PUT]
+
+adminMachines_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "FablabFablabBundle:MachinesAdmin:delete" }
+    methods:  [POST, DELETE]

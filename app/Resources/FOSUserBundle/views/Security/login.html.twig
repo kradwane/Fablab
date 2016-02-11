@@ -1,0 +1,103 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+
+<div id='main' role='main'>
+    <div id='main-content-header'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <h1 class='title'>
+                        Connexion
+                        <small>Connectez-vous c'est plus vite</small>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form -->
+
+
+
+    <div id='main-content'>
+        <div class="container">
+                {% if error %}
+                    <div class="col-md-4"></div>
+                    <div class="alert alert-danger col-md-4" style="text-align: center">
+
+                            {{ error.messageKey|trans(error.messageData, 'security') }}
+                        </div>
+                {% endif %}
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                    <form class="form-signin" action="{{ path("fos_user_security_check") }}" method="post">
+
+                        <div class="row">
+                            <h2>Connectez-vous <small>C'est simple.</small></h2>
+                            <hr class="colorgraph">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                                    <label  for="username" class="control-label">{{ 'security.login.username'|trans }}</label>
+                                    {#<input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />#}
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa-icon-user"></i></span>
+                                        <input type="text"  id="username" name="_username" class="form-control input-lg"  title="Votre e-mail" value="{{ last_username }}"  required="required" >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="password" class="control-label">{{ 'security.login.password'|trans }}</label>
+                                    {#<input type="password" class="form-control input-lg" pattern="(?=.*\d)(?=.*[a-z]).{6,}" title="Votre mot de passe" id="password" name="_password" required="required" /><br>#}
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa-icon-lock"></i></span>
+                                        <input type="password" id="password" name="_password" class="form-control input-lg"  title="Votre mot de passe"  required="required">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="checkbox">
+                            <label>
+                                <a href="{{ path('fos_user_resetting_request') }}" >Mot de passe oublié?</a>
+                            </label>
+                        </div>
+
+
+
+                        <div class="row">
+                            <hr class="colorgraph">
+                        </div>
+
+                        <!-- Form buttons -->
+                        <div style="text-align: center;">
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <input  class="btn btn-success btn-lg" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}">
+                                </div>
+                            </div>
+                            <p> Vous n'&ecirc;tes pas inscrit au FAB LAB ? <br>
+                                <a href="{{ path('fos_user_registration_register') }}"> Créer un compte ?</a>
+                            </p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock fos_user_content %}

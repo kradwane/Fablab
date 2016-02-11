@@ -1,0 +1,7 @@
+fablab_fablab_adminMachines:
+    resource: "@FablabFablabBundle/Resources/config/routing/machines.yml"
+    prefix:   /admin/machines
+
+fablab_fablab_homepage:
+    path:     /
+    defaults: { _controller: FablabFablabBundle:Default:acceuil }

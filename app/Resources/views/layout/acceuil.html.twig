@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html class="lt-ie9" lang="en">
+<head>
+    <title>Fablab d'Université du Havre - Accueil</title>
+    <meta content='blog, business, clean, multipurpose template, twitter bootstrap 3, responsive' name='keywords'>
+    <meta content='Jednotka is multipurpose Twitter Bootstrap 3 template which is suitable for any type of business or online project. '
+          name='description'>
+    <meta content='BublinaStudio.com' name='author'>
+    <meta content='all' name='robots'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <link href='{{ asset('assets/images/meta_icons/favicon.ico') }}' rel='shortcut icon' type='image/x-icon'>
+    <link href='{{ asset('assets/images/meta_icons/apple-touch-icon.png') }}' rel='apple-touch-icon-precomposed'>
+    <link href='{{ asset('assets/images/meta_icons/apple-touch-icon-57x57.png') }}' rel='apple-touch-icon-precomposed' sizes='57x57'>
+    <link href='{{ asset('assets/images/meta_icons/apple-touch-icon-72x72.png') }}' rel='apple-touch-icon-precomposed' sizes='72x72'>
+    <link href='{{ asset('assets/images/meta_icons/apple-touch-icon-114x114.png') }}' rel='apple-touch-icon-precomposed'
+          sizes='114x114'>
+    <link href='{{ asset('assets/images/meta_icons/apple-touch-icon-144x144.png') }}' rel='apple-touch-icon-precomposed'
+          sizes='144x144'>
+    <link href='{{ asset('assets/images/meta_icons/apple-touch-icon-60x60.png') }}' rel='apple-touch-icon-precomposed' sizes='57x57'>
+    <link href='{{ asset('assets/images/meta_icons/apple-touch-icon-120x120.png') }}' rel='apple-touch-icon-precomposed' sizes='72x72'>
+    <link href='{{ asset('assets/images/meta_icons/apple-touch-icon-76x76.png') }}' rel='apple-touch-icon-precomposed' sizes='114x114'>
+    <link href='{{ asset('assets/images/meta_icons/apple-touch-icon-152x152.png') }}' rel='apple-touch-icon-precomposed'
+          sizes='144x144'>
+    <!-- / required stylesheets -->
+    <link href="{{ asset('assets/stylesheets/bootstrap/bootstrap.min.css') }}" media="all" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('assets/stylesheets/jednotka_green.css') }}" media="all" id="colors" rel="stylesheet" type="text/css"/>
+    <!-- / not required stylesheets -->
+    <link href="{{ asset('assets/stylesheets/demo.css') }}" media="all" rel="stylesheet" type="text/css"/>
+    {#<script src="{{ asset('assets/javascripts/ie/html5shiv.js') }}" type="text/javascript"></script>#}
+    {#<script src="{{ asset('assets/javascripts/ie/respond.min.js') }}" type="text/javascript"></script>#}
+
+{#</head>#}
+</head>
+<body class='homepage'>
+<div id='wrapper'>
+    <header id='header'>
+        <div class='container'>
+            <nav class='navbar navbar-default' id='nav' role='navigation'>
+                <div class='navbar-header'>
+                    <button class='navbar-toggle' data-target='.navbar-header-collapse' data-toggle='collapse'
+                            type='button'>
+                        <span class='sr-only'>Toggle navigation</span>
+                        <span class='icon-bar'></span>
+                        <span class='icon-bar'></span>
+                        <span class='icon-bar'></span>
+                    </button>
+                    <a class='navbar-brand' href='index.html'>
+                        <img alt="Jednotka" width="117" height="39" src="{{ asset('assets/images/logo.svg') }}"/>
+                    </a>
+                </div>
+                <div class='collapse navbar-collapse navbar-header-collapse'>
+                    <ul class='nav navbar-nav navbar-right'>
+                        <li class='active dropdown'>
+                            <a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown'
+                               href='#'>
+                    <span>
+                      Accueil
+                      <i class='fa-icon-angle-down'></i>
+                    </span>
+                            </a>
+                            <ul class='dropdown-menu' role='menu'>
+
+                                <li class='active'>
+                                    <a href='index.html'>Accueil</a>
+                                </li>
+                                <li class=''>
+                                    <a href='apropos.html'>A propos de</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class='dropdown'>
+                            <a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown'
+                               href='#'>
+                    <span>
+                      Machines
+                      <i class='fa-icon-angle-down'></i>
+                    </span>
+                            </a>
+                            <ul class='dropdown-menu' role='menu'>
+                                <li class=''>
+                                    <a href='info.html'>Liste des Machines</a>
+                                </li>
+                                <li class=''>
+                                    <a href='reservation.html'>Réservation</a>
+                                </li>
+                            </ul>
+                        </li>
+                        {#<li class='dropdown'>#}
+                            {#<a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown'#}
+                               {#href='#'>#}
+                    {#<span>#}
+                      {#Connexion#}
+                      {#<i class='fa-icon-angle-down'></i>#}
+                    {#</span>#}
+                            {#</a>#}
+                            {#<ul class='dropdown-menu' role='menu'>#}
+                                {#<li class=''>#}
+                                    {#<a href='connexion.html'>Connexion</a>#}
+                                {#</li>#}
+                                {#<li class=''>#}
+                                {#</li>#}
+                            {#</ul>#}
+                        {#</li>#}
+
+                        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                        {% include 'UtilisateursUtilisateursBundle:Default:modulesUsed/utilisateurConnecte.html.twig' %}
+                        {% else %}
+                        {% include 'UtilisateursUtilisateursBundle:Default:modulesUsed/utilisateur.html.twig' %}
+                        {% endif %}
+                        <li class='dropdown'>
+                            <a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown'
+                               href='#'>
+                            <span>
+                              Contactez-nous
+                              <i class='fa-icon-angle-down'></i>
+                            </span>
+                            </a>
+                            <ul class='dropdown-menu' role='menu'>
+                                <li class=''>
+                                    <a href='contact.html'>Contactez-nous</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id='main' role='main'>
+        <div class='carousel-blur flexslider' id='carousel-example-1'>
+            <ul class='slides'>
+                <li class='item'>
+                    <div class='container'>
+                        <div class='row'>
+                            <div class='col-lg-12 animate'>
+                                <h1 class='big fadeInUp animated'>
+                                    Fablab Université du Havre.
+                                </h1>
+
+
+                                <p class='normal fadeInUp animated'>Imaginer, Fabriquer, Innovez, Partager ...</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class='item'>
+                    <div class='container'>
+                        <div class='row'>
+                            <div class='col-lg-12 animate'>
+                                <h2 class='big fadeInLeftBig animated'>
+                                    FabLab
+
+                                </h2>
+
+                                <p class='normal fadeInRightBig animated'>
+                                    Un atelier partagé, orienté vers la fabrication numérique
+                                    <br>
+                                    Vous faites partie d'une communauté d'échanges
+                                    <br>
+                                    Vous donnez forme à vos projets créatifs
+                                    <br>
+                                    Autonomie ou avec les autres...
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class='item'>
+                    <div class='container'>
+                        <div class='row'>
+                            <div class='col-lg-12 animate'>
+                                <h2 class='big fadeInRightBig animated'>Nos objectifs
+
+                                </h2>
+
+                                <p class='normal fadeInLeftBig animated'>
+                                    Permettre l'accès à tout public, sur une large plage d'ouverture, à la formation et
+                                    à l'utilisation des équipements
+                                    <br>
+                                    Etre un lieu de rencontre et d'échange
+                                    <br>
+                                    Etre un démonstrateur pour les industriels
+                                    <br>
+                                    Faire monter en gamme les industries locales
+                                </p>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id='main-content'>
+            <div class='container'>
+                <div class='row'>
+
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-12'>
+                        <div class='page-header page-header-with-icon'>
+                            <i class='fa-icon-suitcase'></i>
+
+                            <h2>
+                                Menu Fablab
+                                <small></small>
+                            </h2>
+                        </div>
+
+
+                        <div class='row portfolio-boxes'>
+                            <div class='col-sm-3 col-xs-6 no-mb-t-xs portfolio-box'>
+                                <a class='image-link' href='portfolio_detail.html'>
+                                    <i class='fa-icon-search'></i>
+                                    <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum"
+                                         width="262" height="262" src="{{ asset('assets/images/demo/last_projects/1.png') }}"/>
+
+                                <h3 class='title'>Cours</h3>
+
+                                <p class='category'></p>
+                                </a>
+
+                            </div>
+                            <div class='col-sm-3 col-xs-6 no-mb-t-xs portfolio-box'>
+                                <a class='image-link' href='portfolio_detail.html'>
+                                    <i class='fa-icon-link'></i>
+                                    <img class="img-responsive img-rounded center-block" alt="Malesuada" width="262"
+                                         height="262" src="{{ asset('assets/images/demo/last_projects/2.jpg') }}"/>
+
+                                <h3 class='title'>Outils</h3>
+
+                                <p class='category'></p>
+                                </a>
+
+                            </div>
+                            <div class='col-sm-3 col-xs-6 portfolio-box'>
+                                <a href='portfolio_detail.html'>
+                                    <div class='image-link'>
+                                        <i class='fa-icon-search'></i>
+                                        <img class="img-responsive img-rounded center-block" alt="Dictum vulputate"
+                                             width="262" height="262" src="{{ asset('assets/images/demo/last_projects/3.png') }}"/>
+                                    </div>
+                                    <h3 class='title'>Organisation</h3>
+
+                                    <p class='category'></p>
+                                </a>
+                            </div>
+                            <div class='col-sm-3 col-xs-6 portfolio-box'>
+                                <a href='portfolio_detail.html'>
+                                    <div class='image-link'>
+                                        <i class='fa-icon-search'></i>
+                                        <img class="img-responsive img-rounded center-block" alt="Semper massa"
+                                             width="262" height="262" src="{{ asset('assets/images/demo/last_projects/4.png') }}"/>
+                                    </div>
+                                    <h3 class='title'>Evènements</h3>
+
+                                    <p class='category'></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class='row'>
+                    <div class='col-sm-12'>
+                        <div class='page-header page-header-with-icon'>
+                            <i class='fa-icon-quote-right'></i>
+
+                            <h2>Nos Partenaires</h2>
+                        </div>
+                        <div class='row quotes'>
+                            <div class='carousel carousel-default slide carousel-auto' id='carousel-testimonials'>
+                                <div class='carousel-inner'>
+
+
+
+
+                                    <div class='item active quote'>
+                                        <div class='col-sm-12 text-center'>
+                                            <p class='lead'>
+                                                <img  width="117" height="39" src="{{ asset('assets/images/partenaires/280px-Université_de_Rouen.png') }}"/>
+
+                                            </p>
+
+                                            <div class='author-wrapper'>
+                                                <p class='author'>
+                                                    <strong>Université du rouen</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class='item quote'>
+                                        <div class='col-sm-12 text-center'>
+                                            <p class='lead'>
+
+                                                <img  width="117"
+                                                      height="39" src="{{ asset('assets/images/partenaires/CNRS.png') }}"/>
+
+                                            </p>
+
+                                            <div class='author-wrapper'>
+                                                <p class='author'>
+                                                    <strong>CNRS</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div class='item quote'>
+                                        <div class='col-sm-12 text-center'>
+                                            <p class='lead'>
+
+
+                                                <img  width="117"
+                                                      height="39" src="{{ asset('assets/images/partenaires/insa_lyon.png') }}"/>
+                                            </p>
+
+                                            <div class='author-wrapper'>
+                                                <p class='author'>
+                                                    <strong>INSA de Lyon</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class='item quote'>
+                                        <div class='col-sm-12 text-center'>
+                                            <p class='lead'>
+
+                                                <img  width="117"
+                                                      height="39" src="{{ asset('assets/images/partenaires/LirisLogo.png') }}"/>
+
+                                            </p>
+
+                                            <div class='author-wrapper'>
+                                                <p class='author'>
+                                                    <strong>Liris</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class='item quote'>
+                                        <div class='col-sm-12 text-center'>
+                                            <p class='lead'>
+                                                <img  width="117"
+                                                      height="39" src="{{ asset("assets/images/partenaires/Logo_de_l'université_Toulouse_-_Jean_Jaurès.png") }}"/>
+                                            </p>
+
+                                            <div class="author-wrapper">
+                                                <p class="author">
+                                                    <strong>Université de Toulouse</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item quote">
+                                        <div class="col-sm-12 text-center">
+                                            <p class="lead">
+                                                <img  width="117" height="39" src="{{ asset('assets/images/partenaires/logo-universite-Paris_Sud-300px.png') }}"/>
+                                            </p>
+
+                                            <div class="author-wrapper">
+                                                <p class="author">
+                                                    <strong>Université Paris Sud</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="item quote">
+                                        <div class="col-sm-12 text-center">
+                                            <p class="lead">
+                                                <img src="{{ asset('assets/images/partenaires/220px-Logo-LIAS.png') }}" width="117"  height="39" />
+                                            </p>
+
+                                            <div class="author-wrapper">
+                                                <p class="author">
+                                                    <strong>LIAS</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fade" id="scroll-to-top">
+            <i class="fa-icon-chevron-up"></i>
+        </div>
+    </div>
+    <footer id='footer'>
+        <div id='footer-main'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-md-3 col-sm-6 info-box'>
+                        <div class='logo-container'>
+                            <img alt="Jednotka" width="117" height="39" src="{{ asset('assets/images/logo.svg') }}"/>
+                        </div>
+                        <p class='no-mg-b'>Fablab de l'Université est un atelier partagé, orienté vers la fabrication numérique. C'est un lieu ouvert au public où il est mis à sa disposition toutes sortes d'outils, notamment des machines-outils pilotées par ordinateur, pour la conception et la réalisation d'objets.</p>
+                    </div>
+                    <div class='col-md-3 col-sm-6 info-box'>
+                        <h2 class='title'>Contactez-nous</h2>
+                        <div class='icon-boxes'>
+                            <div class='icon-box'>
+                                <div class='icon icon-wrap'>
+                                    <i class='fa-icon-map-marker'></i>
+                                </div>
+                                <div class='content'>
+                                    Université du Havre
+                                    <br>
+                                    25 rue Philippe Lebon
+                                    <br>
+                                    BP 1123 - 76063 Le Havre Cedex
+                                    <br>
+                                    France,
+                                </div>
+                            </div>
+                            <div class='icon-box'>
+                                <div class='icon icon-wrap'>
+                                    <i class='fa-icon-phone'></i>
+                                </div>
+                                <div class='content'>
+                                    <a href='tel:+33232744000'>+33 (0)2 32 74 40 00</a>
+                                </div>
+                            </div>
+                            <div class='icon-box'>
+                                <div class='icon icon-wrap'>
+                                    <i class='fa-icon-envelope'></i>
+                                </div>
+                                <div class='content'><a href="mailto:communication@univ-lehavre.fr">communication@univ-lehavre.fr</a>
+                                </div>
+                            </div>
+                            <div class='icon-box'>
+                                <div class='icon icon-wrap'>
+                                    <i class='fa-icon-globe'></i>
+                                </div>
+                                <div class='content'><a href="http://fablab.univ-lehavre.fr/">http://fablab.univ-lehavre.fr/</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-3 col-sm-6 info-box social-box'>
+                        <h2 class='title'>Suivez-nous</h2>
+                        <div class='icon-boxes'>
+                            <div class='icon-box'>
+                                <div class='icon icon-wrap'>
+                                    <i class='fa-icon-facebook text-contrast'></i>
+                                </div>
+                                <div class='content'>
+                                    <p>Fablab d'Université du Havre - Facebook</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='icon-boxes'>
+                            <div class='icon-box'>
+                                <div class='icon icon-wrap'>
+                                    <i class='fa-icon-twitter text-contrast'></i>
+                                </div>
+                                <div class='content'>
+                                    <p>Fablab d'Université du Havre - Twitter</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='icon-boxes'>
+                            <div class='icon-box'>
+                                <div class='icon icon-wrap'>
+                                    <i class='fa-icon-youtube text-contrast'></i>
+                                </div>
+                                <div class='content'>
+                                    <p>Fablab d'Université du Havre - YouTube</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-3 col-sm-6 info-box'>
+                        <h2 class='title'>Newsletter</h2>
+
+                        <p>Abonnez-vous à la Newsletter de notre Fablab</p>
+
+                        <form action='http://empty-ice-3260.herokuapp.com/newsroom--2/newsletters' class='form-inline form-validation'
+                              method='get'>
+                            <div class='row'>
+                                <div class='form-group control-group col-xs-9 col-md-8 col-lg-9'>
+                                    <input class='form-control' data-rule-email='true' data-rule-required='true'
+                                           id='newsletter_email' name='newsletter[email]' placeholder='Email address'
+                                           type='email'>
+                                </div>
+                                <div class='col-xs-3 col-md-4 col-lg-3'>
+                                    <button class='btn btn-medium-light btn-block' type='submit'>
+                                        <i class='fa-icon-reply text-white'></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='footer-copyright'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-lg-12 clearfix'>
+                        <p class='copyright'>
+                            Copyright
+                            &copy;
+                            {{ 'now'|date('Y') }} Fablab
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<div class='style-switcher' id='style-switcher'>
+    <div class='style-switcher-heading'>
+        Style switcher
+        <i class='fa-icon-cogs'></i>
+    </div>
+    <div class='style-switcher-body'>
+        <div class='style-switcher-colors'>
+            <div class='style-switcher-title'>Colors</div>
+            <a class='style-switcher-color orange' data-switch-target='#colors' data-switch-to='jednotka_orange.css'
+               href='#'></a>
+            <a class='style-switcher-color blue' data-switch-target='#colors' data-switch-to='jednotka_blue.css'
+               href='#'></a>
+            <a class='style-switcher-color green active' data-switch-default data-switch-target='#colors'
+               data-switch-to='jednotka_green.css' href='#'></a>
+            <a class='style-switcher-color salmon' data-switch-target='#colors' data-switch-to='jednotka_salmon.css'
+               href='#'></a>
+            <a class='style-switcher-color mint' data-switch-target='#colors' data-switch-to='jednotka_mint.css'
+               href='#'></a>
+            <a class='style-switcher-color red' data-switch-target='#colors' data-switch-to='jednotka_red.css'
+               href='#'></a>
+            <a class='style-switcher-color yellow' data-switch-target='#colors' data-switch-to='jednotka_yellow.css'
+               href='#'></a>
+        </div>
+        <div class='style-switcher-layouts'>
+            <div class='style-switcher-title'>Layout type</div>
+            <a class='style-switcher-button active' data-switch-default data-switch-target='body'
+               data-switch-to='removeClass:boxed' href='#'>Wide</a>
+            <a class='style-switcher-button' data-switch-target='body' data-switch-to='addClass:boxed'
+               href='#'>Boxed</a>
+        </div>
+        <div class='style-switcher-reset'>
+            <a class='style-switcher-button' data-switch-target='#style-switcher' data-switch-to='reset:defaults'
+               href='#'>Reset to defaults</a>
+        </div>
+    </div>
+</div>
+<!-- / required javascripts -->
+<script src="{{ asset('assets/javascripts/jquery/jquery.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/javascripts/jquery/jquery.mobile.custom.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/javascripts/bootstrap/bootstrap.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/javascripts/plugins/modernizr/modernizr.custom.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/javascripts/plugins/hover_dropdown/twitter-bootstrap-hover-dropdown.min.js') }}"
+        type="text/javascript"></script>
+<script src="{{ asset('assets/javascripts/plugins/retina/retina.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/javascripts/plugins/knob/jquery.knob.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/javascripts/plugins/isotope/jquery.isotope.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/javascripts/plugins/isotope/jquery.isotope.sloppy-masonry.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/javascripts/plugins/validate/jquery.validate.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/javascripts/plugins/flexslider/jquery.flexslider.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/javascripts/plugins/countdown/countdown.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/javascripts/plugins/lightbox/lightbox.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/javascripts/plugins/cycle/jquery.cycle.all.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/javascripts/jednotka.js') }}" type="text/javascript"></script>
+
+<script src="{{ asset('assets/javascripts/demo.js') }}" type="text/javascript"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-44249116-1', 'bublinastudio.com');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

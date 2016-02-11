@@ -1,0 +1,132 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+
+
+<div id='main' role='main'>
+    <div id='main-content-header'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <h1 class='title'>
+                        Inscription
+                        <small>Inscrivez vous c’est gratuit et c'est plus vite</small>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form -->
+
+    <div id='main-content'>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                    <div class="row">
+                        <h2>Inscription <small>C'est gratuit.</small></h2>
+                        <hr class="colorgraph">
+                    </div>
+
+                    <form class="form-horizontal" name="fos_user_registration_form" action="{{ path('fos_user_registration_register') }}" method="POST">
+                       <div id="fos_user_registration_form">
+                           <div class="row">
+                               <div class="col-xs-12">
+                                   <div class="form-group">
+                                       <label for="fos_user_registration_form_email" class="required control-label" >Adresse e-mail</label>
+
+                                       {#<label class="control-label">Adresse email</label>#}
+                                       <div class="input-group">
+                                           <input type="email" id="fos_user_registration_form_email" class="form-control input-lg"  title="Votre e-mail" name="fos_user_registration_form[email]" required="required" />
+
+                                           {#<input type="text" class="form-control input-lg" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Votre e-mail" name="email" required>#}
+                                           <div class="asterisk_input input-group-addon"></div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+
+
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="fos_user_registration_form_username" class="required control-label">Nom d&#039;utilisateur</label>
+                                            {#<label class="control-label">Nom d'utilisateur</label>#}
+                                            <div class="input-group">
+                                                <input type="text" id="fos_user_registration_form_username" class="form-control input-lg" name="fos_user_registration_form[username]" required="required" maxlength="255" pattern=".{2,}" />
+
+                                                {#<input type="text" class="form-control input-lg" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Votre e-mail" name="email" required>#}
+                                                <div class="asterisk_input input-group-addon"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="fos_user_registration_form_plainPassword_first" class="required control-label">Mot de passe</label>
+
+                                            {#<label class="control-label">Mot de passe</label>#}
+                                            <div class="input-group">
+                                                <input type="password" class="form-control input-lg" id="fos_user_registration_form_plainPassword_first" name="fos_user_registration_form[plainPassword][first]" required="required" />
+
+                                                {#<input type="password" class="form-control input-lg" pattern="(?=.*\d)(?=.*[a-z]).{6,}" title="Votre mot de passe doit contenir 6 caract&egrave;res minimum; diff&eacute;rencie chiffres et lettres" name="mdp" required>#}
+                                                <div class="asterisk_input input-group-addon"></div>
+                                            </div>
+                                            <p class="help-block"></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="fos_user_registration_form_plainPassword_second" class="required control-label">Vérification</label>
+
+                                            {#<label class="control-label">Retapez le mot de passe</label>#}
+                                            <div class="input-group">
+                                                <input type="password" class="form-control input-lg" id="fos_user_registration_form_plainPassword_second" name="fos_user_registration_form[plainPassword][second]" required="required" />
+                                                {{ form_row(form._token) }}
+                                                {#<input type="hidden" id="fos_user_registration_form__token" name="fos_user_registration_form[_token]" >#}
+                                                {#<input type="password" class="form-control input-lg" pattern="(?=.*\d)(?=.*[a-z]).{6,}" title="Le mot de passe doit &ecirc;tre identique &agrave; celui du premier champ" name="cmdp" required>#}
+                                                <div class="asterisk_input input-group-addon"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <i class="fa-icon-ok"></i>
+                                            <span>J'accepte</span>
+                                            <input type="checkbox" name="type" value="1" title="Veuillez cocher la case si vous souhaitez continuer" required>
+                                        </div>
+                                    </label>
+                                    En cliquant sur la case <strong class="label label-primary">J'accepte</strong> vous acceptez les <a href="#">Termes et conditions</a> de cet accord.
+                                </div>
+
+                                <div class="row">
+                                    <hr class="colorgraph">
+                                </div>
+                       </div>
+                        <!-- Form buttons -->
+                        <div style="text-align: center;">
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <input type="submit" class="btn btn-success btn-lg" value="{{ 'registration.submit'|trans }}" >
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="reset" class="btn btn-danger btn-lg" value="Annuler">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

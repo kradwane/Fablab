@@ -1,0 +1,87 @@
+{% extends '::layout/layoutAdmin.html.twig' %}
+{% block body -%}
+
+    <div id="main" role="main">
+        <div id="main-content-header">
+            <div class="container">
+                <div class="row">
+                    <div class='col-sm-12'>
+                        <h1 class='title'>
+                            Machines
+                            {#<small>Connectez-vous c'est plus vite</small>#}
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-content">
+
+            <div class="container">
+                <div class="row">
+                    <label for="">Affichage machines</label>
+                    <div class="input-group">
+                        <table class="record_properties">
+                            <tbody>
+                            <tr>
+                                <th>Id</th>
+                                <td>{{ entity.id }}</td>
+                            </tr>
+                            <tr>
+                                <th>Nomm</th>
+                                <td>{{ entity.nomM }}</td>
+                            </tr>
+                            <tr>
+                                <th>Infogenerale</th>
+                                <td>{{ entity.infogenerale }}</td>
+                            </tr>
+                            <tr>
+                                <th>Surface</th>
+                                <td>{{ entity.surface }}</td>
+                            </tr>
+                            <tr>
+                                <th>Resolution</th>
+                                <td>{{ entity.resolution }}</td>
+                            </tr>
+                            <tr>
+                                <th>Precisionm</th>
+                                <td>{{ entity.precisionm }}</td>
+                            </tr>
+                            <tr>
+                                <th>Logicielu</th>
+                                <td>{{ entity.logicielu }}</td>
+                            </tr>
+                            <tr>
+                                <th>Formatfich</th>
+                                <td>{{ entity.formatfich }}</td>
+                            </tr>
+                            <tr>
+                                <th>Materiauxu</th>
+                                <td>{{ entity.materiauxu }}</td>
+                            </tr>
+                            <tr>
+                                <th>Puissance</th>
+                                <td>{{ entity.puissance }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <ul class="record_actions">
+                            <li>
+                                <a href="{{ path('adminMachines') }}">
+                                    Revenir vers la liste
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ path('adminMachines_edit', { 'id': entity.id }) }}">
+                                    Modifiez
+                                </a>
+                            </li>
+                            <li>{{ form(delete_form) }}</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

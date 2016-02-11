@@ -1,0 +1,132 @@
+{% extends '::layout/layoutAdmin.html.twig' %}
+{% block body -%}
+<div id="main" role="main">
+    <div id="main-content-header">
+        <div class="container">
+            <div class="row">
+                <div class='col-sm-12'>
+                    <h1 class='title'>
+                        Editer mes Machines
+                        {#<small>Connectez-vous c'est plus vite</small>#}
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main-content">
+
+        <div class="container">
+            <div class="row">
+                <div class="input-group">
+                    <form action="{{ path('adminMachines_update', {'id': entity.id}) }}" method="post" {{ form_enctype(edit_form) }} >
+                    {{ form(edit_form) }}
+                    </form>
+
+
+                </div>
+
+                <ul class="record_actions">
+                    <li>
+                        <a href="{{ path('adminMachines') }}">
+                            Back to the list
+                        </a>
+                    </li>
+                    <li>{{ form(delete_form) }}</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+
+{#{% extends '::layout/layoutAdmin.html.twig' %}#}
+{#{% block body -%}#}
+    {#<div id="main" role="main">#}
+        {#<div id="main-content-header">#}
+            {#<div class="container">#}
+                {#<div class="row">#}
+                    {#<div class='col-sm-12'>#}
+                        {#<h1 class='title'>#}
+                            {#Editer mes Machines#}
+                            {#&#123;&#35;<small>Connectez-vous c'est plus vite</small>&#35;&#125;#}
+                        {#</h1>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+        {#<div id="main-content">#}
+
+            {#<div class="container">#}
+                {#<div class="row">#}
+                    {#{{ form_start(edit_form, {'attr': { 'class': 'form-horizontal' } }) }}#}
+                    {#Nom de la machine#}
+                    {#<div class="input-group">#}
+                        {#{{ form_widget(edit_form.nomM, {'attr': {'class': 'form-control', 'placeholder': 'entrez le nom de la machine'}}) }}#}
+
+                    {#</div>#}
+                    {#<br>#}
+                    {#Info générale#}
+                    {#<div class="input-group">#}
+                        {#{{ form_widget(edit_form.infogenerale, {'attr': {'class': 'form-control', 'placeholder': 'info génerale'}}) }}#}
+                    {#</div><br>#}
+                    {#la surface#}
+                    {#<div class="input-group">#}
+                        {#{{ form_widget(edit_form.surface, {'attr': {'class': 'form-control', 'placeholder': 'entrer la surface'}}) }}#}
+                    {#</div><br>#}
+                    {#la résolution#}
+                    {#<div class="input-group">#}
+                        {#{{ form_widget(edit_form.resolution, {'attr': {'class': 'form-control', 'placeholder': 'entrer la resolution'}}) }}#}
+                    {#</div><br>#}
+                    {#la précision de la machine#}
+                    {#<div class="input-group">#}
+                        {#{{ form_widget(edit_form.precisionm, {'attr': {'class': 'form-control', 'placeholder': 'entrer la precision de la machine'}}) }}#}
+                    {#</div><br>#}
+                    {#logiciel utilisé#}
+                    {#<div class="input-group">#}
+                        {#{{ form_widget(edit_form.logicielu, {'attr': {'class': 'form-control', 'placeholder': 'le logiciel utilisé'}}) }}#}
+                    {#</div><br>#}
+                    {#le logiciel utilisé#}
+                    {#<div class="input-group">#}
+                        {#{{ form_widget(edit_form.formatfich, {'attr': {'class': 'form-control', 'placeholder': 'le format de la fiche'}}) }}#}
+                    {#</div><br>#}
+                    {#les materiaux#}
+                    {#<div class="input-group">#}
+                        {#{{ form_widget(edit_form.materiauxu, {'attr': {'class': 'form-control', 'placeholder': 'les materiaux'}}) }}#}
+                    {#</div><br>#}
+                    {#la puissance#}
+                    {#<div class="input-group">#}
+                        {#{{ form_widget(edit_form.puissance, {'attr': {'class': 'form-control', 'placeholder': 'la puissance'}}) }}#}
+                    {#</div><br>#}
+                    {#chemin image#}
+                    {#<div class="input-group">#}
+                        {#{{ form_widget(edit_form.image.path, {'attr': {'class': 'form-control', 'placeholder': 'chemin image'}}) }}#}
+                    {#</div><br>#}
+                    {#Alt#}
+                    {#<div class="input-group">#}
+                        {#{{ form_widget(edit_form.image.alt, {'attr': {'class': 'form-control', 'placeholder': 'Alt'}}) }}#}
+                    {#</div><br>#}
+                    {#<ul class="record_actions">#}
+                        {#<li>#}
+                            {#<a href="{{ path('adminMachines') }}">#}
+                                {#Back to the list#}
+                            {#</a>#}
+                        {#</li>#}
+                        {#<li>{{ form(delete_form) }}</li>#}
+                    {#</ul>#}
+                    {#{{ form_end(edit_form) }}#}
+
+                {#</div>#}
+
+            {#</div>#}
+        {#</div>#}
+    {#</div>#}
+{#{% endblock %}#}

@@ -1,0 +1,78 @@
+{% trans_default_domain 'FOSUserBundle' %}
+<div id="main" role="main">
+    <div id="main-content-header">
+        <div class="container">
+            <div class="row">
+                <div class='col-sm-12'>
+                <h1 class='title'>
+                Editer mes informations
+                {#<small>Connectez-vous c'est plus vite</small>#}
+                </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="main-content">
+
+    <div class="container">
+        <div class="row">
+            {{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'fos_user_profile_edit form-horizontal' } }) }}
+            <label for="">Adresse e-mail</label>
+            <div class="input-group">
+                <div class="input-group-addon">@</div>
+                {{ form_widget(form.email, {'attr': {'class': 'form-control', 'placeholder': 'adresse mail'}}) }}
+                {#<input type="text" class="form-control input-lg" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Votre e-mail" name="email" required>#}
+            </div>
+            <label for="">Nom de l'utilisateur</label>
+            <div class="input-group">
+                <div class="input-group-addon"><div class="glyphicon glyphicon-tag"></div></div>
+                {{ form_widget(form.username, {'attr': {'class': 'form-control', 'placeholder': 'username'}}) }}
+                {#<input type="text" class="form-control input-lg" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Votre e-mail" name="email" required>#}
+            </div>
+            <label for="">Mot de passe actuel</label>
+            <div class="input-group">
+                <div class="asterisk_input input-group-addon"></div>
+                {{ form_widget(form.current_password, {'attr': {'class': 'form-control', 'placeholder': 'mot de passe actuel'}}) }}
+                {#<input type="text" class="form-control input-lg" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Votre e-mail" name="email" required>#}
+            </div>
+
+            {{ form_widget(form) }}
+            <div>
+                <input class="btn btn-default" type="submit" value="{{ 'profile.edit.submit'|trans }}" />
+            </div>
+            {{ form_end(form) }}
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+{#<div id='main' role='main'>#}
+    {#<div id='main-content-header'>#}
+        {#<div class='container'>#}
+            {#<div class='row'>#}
+                {#<div class='col-sm-12'>#}
+                    {#<h1 class='title'>#}
+                        {#{{ user.username }}#}
+                        {#&#123;&#35;<small>Connectez-vous c'est plus vite</small>&#35;&#125;#}
+                    {#</h1>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+    {#</div>#}
+    {#<div id="main-content">#}
+        {#<div class="container">#}
+            {#<div class="row">#}
+                {#<div class="fos_user_user_show">#}
+                    {#<div class="well">{{ 'profile.show.username'|trans }}: {{ user.username }}</div>#}
+                {#</div>#}
+                {#<div class="fos_user_user_show">#}
+                    {#<div class="well">{{ 'profile.show.email'|trans }}: {{ user.email }}</div>#}
+                {#</div>#}
+
+            {#</div>#}
+        {#</div>#}
+    {#</div>#}
+{#</div>#}
